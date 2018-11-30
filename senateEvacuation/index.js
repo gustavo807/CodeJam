@@ -80,13 +80,59 @@ function getStepsNumber(values){
 
 
 var senators = [4,2,3,2];
-//var senators = [2,2,1];
-//var senators = [2, 2];
-//var senators = [3, 2, 2];
-//var senators = [1, 1, 2];
-//var senators = [2, 3, 1];
+/* 
+[ 4, 2, 3, 2 ] 'AA'
+[ 2, 2, 3, 2 ] 'CC'
+[ 2, 2, 1, 2 ] 'AB'
+[ 1, 1, 1, 2 ] 'DD'
+[ 1, 1, 1, 0 ] 'A'
+[ 0, 1, 1, 0 ] 'BC'
+*/
 
-//var senators = [4,4,4];
+var senators = [2,2,1];
+/*
+[ 2, 2, 1 ] 'AB'
+[ 1, 1, 1 ] 'A'
+[ 0, 1, 1 ] 'BC'
+*/
+
+var senators = [2, 2];
+/*
+[ 2, 2 ] 'AB'
+[ 1, 1 ] 'AB'
+*/
+
+var senators = [3, 2, 2];
+/*
+[ 3, 2, 2 ] 'AA'
+[ 1, 2, 2 ] 'BC'
+[ 1, 1, 1 ] 'A'
+[ 0, 1, 1 ] 'BC'
+*/
+
+var senators = [1, 1, 2];
+/*
+[ 1, 1, 2 ] 'CC'
+[ 1, 1, 0 ] 'AB'
+*/
+
+var senators = [2, 3, 1];
+/*
+[ 2, 3, 1 ] 'BB'
+[ 2, 1, 1 ] 'AA'
+[ 0, 1, 1 ] 'BC'
+*/
+
+var senators = [4,4,4];
+/*
+[ 4, 4, 4 ] 'AA'
+[ 2, 4, 4 ] 'BC'
+[ 2, 3, 3 ] 'BC'
+[ 2, 2, 2 ] 'AA'
+[ 0, 2, 2 ] 'BC'
+[ 0, 1, 1 ] 'BC'
+*/
+
 senateEvacuation(senators);
 
 
